@@ -35,8 +35,11 @@
     }
   ],
   "outbounds": [
-    {
-      "protocol": "freedom"
+  {
+    "protocol": "freedom",
+    "settings": {
+      "domainStrategy": "UseIPv4"  // 加上这一行，强制只用 IPv4 解析和连接
     }
-  ]
+  }
+]
 }
